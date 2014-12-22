@@ -1660,4 +1660,81 @@
 .fa-meanpath:before {
   content: ""; }
 
+#modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 3000;
+  display: none; }
+  #modal .modal__container {
+    min-height: 300px;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    background-color: white;
+    display: block;
+    position: relative; }
+  #modal .modal__button-dismiss {
+    position: absolute;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    right: 10px;
+    background-color: #f08c8c;
+    border-radius: 10px; }
+  #modal .modal__shader {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+body.midnight {
+  background-color: #38387e; }
+  body.midnight .header {
+    background-color: #28285b; }
+    body.midnight .header .logo {
+      color: #f8f8f8;
+      text-shadow: 0 1px 0 #c5c5c5; }
+    body.midnight .header .nav > li {
+      background-color: #38387e;
+      box-shadow: 0 2px 0 #202049;
+      text-shadow: 0 1px 0 #c5c5c5; }
+      body.midnight .header .nav > li:hover {
+        background-color: #414194;
+        box-shadow: 0 2px 0 #28285b; }
+      body.midnight .header .nav > li:active {
+        top: 1px;
+        box-shadow: 0 1px 0 #28285b; }
+      body.midnight .header .nav > li a {
+        color: #f8f8f8; }
+
+body.turqoise {
+  background-color: #00b9b9; }
+  body.turqoise .header {
+    background-color: #1e2828; }
+    body.turqoise .header .logo {
+      color: #f8f8f8;
+      text-shadow: 0 1px 0 #c5c5c5; }
+    body.turqoise .header .nav > li {
+      background-color: #ff8282;
+      box-shadow: 0 2px 0 #ff3535;
+      text-shadow: 0 1px 0 #c5c5c5; }
+      body.turqoise .header .nav > li:hover {
+        background-color: #ffa1a1;
+        box-shadow: 0 2px 0 #ff4f4f; }
+      body.turqoise .header .nav > li:active {
+        top: 1px;
+        box-shadow: 0 1px 0 #ff4f4f; }
+      body.turqoise .header .nav > li a {
+        color: #f8f8f8; }
+
 /*# sourceMappingURL=main.css.map */

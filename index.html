@@ -4,7 +4,28 @@
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
+	<!-- AboveWindow: Used for info bars etc. -->
+	<!-- Slides whole page down including header -->
+	<div id="above-window"></div>
+	<div id="window-wrapper">
+		<div id="page-wrapper">
 
-<script src="main.js"></script>
+
+		</div>
+		<!-- Footer is outside of page-wrapper to allow it to be 'sticky' -->
+		<div id="footer-wrapper"></div>
+
+	</div>
+
+	<!-- Modal: Overlays the entire page at 100%-100% -->
+	<div id="modal">
+		<div class="modal__shader"></div>
+		<div class="modal__container">
+			<div class="modal__button-dismiss"></div>
+		</div>
+	</div>
+	<!-- Modal end ===================================-->
+
+	<script src="main.js"></script>
 </body>
 </html>
