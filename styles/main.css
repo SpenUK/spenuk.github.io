@@ -2219,6 +2219,7 @@ a {
   width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+  display: inline-block;
   white-space: nowrap;
   top: 0;
   left: 0;
@@ -2247,24 +2248,63 @@ a {
 ::-webkit-scrollbar-thumb {
   background-color: #ff5a6e; }
 
+#push-wrapper {
+  transition: left 500;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0em; }
+  #push-wrapper.side-bar-hidden {
+    left: -60px; }
+  #push-wrapper #side-bar, #push-wrapper #page-wrapper {
+    font-size: 14px; }
+
 #side-bar {
-  transition: width 500;
   display: inline-block;
   height: 100%;
-  width: 200px;
+  width: 60px;
   background-color: whitesmoke;
   z-index: 1000;
-  position: relative; }
-  #side-bar.hidden {
-    width: 0; }
+  position: relative;
+  vertical-align: top;
+  text-align: center; }
+  #side-bar ul {
+    list-style: none;
+    text-align: center;
+    padding: 0em;
+    margin: 0em; }
+    #side-bar ul li {
+      height: 60px;
+      width: 60px;
+      line-height: 60px; }
+  #side-bar i {
+    line-height: 60px;
+    color: #64dcc8; }
   #side-bar .dismiss-button {
     position: absolute;
     right: -60px;
     height: 60px;
     width: 60px;
     top: 0;
-    background-color: #ff5a6e; }
-    #side-bar .dismiss-button.hide {
-      background-color: #444; }
+    background-color: #ff5a6e;
+    cursor: pointer; }
+    #side-bar .dismiss-button:before {
+      content: "";
+      font-family: FontAwesome;
+      color: whitesmoke;
+      line-height: 60px;
+      font-size: 2em; }
+    #side-bar .dismiss-button.hide:before {
+      content: "";
+      font-family: FontAwesome;
+      color: whitesmoke; }
 
 /*# sourceMappingURL=main.css.map */
