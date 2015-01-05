@@ -7884,7 +7884,9 @@ th.hide-for-touch {
   left: 80px;
   left: 0;
   top: 120px;
-  border: 2px solid #64dcc8; }
+  background-color: whitesmoke;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0 #d2d2d2; }
 
 #inPage, #outPage {
   position: absolute;
@@ -8031,7 +8033,7 @@ a {
   background-color: #ff5a6e; }
 
 #push-wrapper {
-  transition: left 500;
+  transition: transform 500;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -8040,12 +8042,11 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
+  transform: translate(-60px, 0);
   position: relative;
   display: inline-block;
   vertical-align: top;
   font-size: 0em; }
-  #push-wrapper.side-bar-hidden {
-    left: -60px; }
   #push-wrapper #side-bar, #push-wrapper #page-wrapper {
     font-size: 14px; }
 
