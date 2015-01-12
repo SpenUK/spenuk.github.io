@@ -7898,11 +7898,14 @@ th.hide-for-touch {
 
 .grid-container {
   margin: 0 auto;
-  margin-top: 10;
   position: relative; }
+  .grid-container:before, .grid-container:after {
+    content: " ";
+    display: table; }
+  .grid-container:after {
+    clear: both; }
   .grid-container .grid-row {
-    padding-left: -5px;
-    padding-right: -5px; }
+    margin-left: -10px; }
     .grid-container .grid-row:before, .grid-container .grid-row:after {
       content: " ";
       display: table; }
@@ -7911,10 +7914,12 @@ th.hide-for-touch {
     .grid-container .grid-row:first-child {
       margin-top: -10px; }
 
-@media only screen and (min-width: 0) and (max-width: 600px) {
+@media only screen and (min-width: 0) {
   .grid-container {
     width: 100%;
-    max-width: 400px; }
+    max-width: 24em; }
+    .grid-container.fixed {
+      width: 24em; }
     .grid-container .grid-row .small-1 {
       width: 8.33333%;
       display: inline-block;
@@ -7986,14 +7991,13 @@ th.hide-for-touch {
       display: inline-block;
       float: left;
       padding-left: 10px;
-      padding-top: 10px; }
-
-  .grid-container.fixed {
-    width: 400px; } }
-@media only screen and (min-width: 601px) and (max-width: 1200px) {
+      padding-top: 10px; } }
+@media only screen and (min-width: 40.063em) {
   .grid-container {
     width: 100%;
-    max-width: 580px; }
+    max-width: 38em; }
+    .grid-container.fixed {
+      width: 38em; }
     .grid-container .grid-row .medium-1 {
       width: 8.33333%;
       display: inline-block;
@@ -8065,14 +8069,13 @@ th.hide-for-touch {
       display: inline-block;
       float: left;
       padding-left: 10px;
-      padding-top: 10px; }
-
-  .grid-container.fixed {
-    width: 580px; } }
-@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+      padding-top: 10px; } }
+@media only screen and (min-width: 64.063em) {
   .grid-container {
     width: 100%;
-    max-width: 1180px; }
+    max-width: 62em; }
+    .grid-container.fixed {
+      width: 62em; }
     .grid-container .grid-row .large-1 {
       width: 8.33333%;
       display: inline-block;
@@ -8144,10 +8147,7 @@ th.hide-for-touch {
       display: inline-block;
       float: left;
       padding-left: 10px;
-      padding-top: 10px; }
-
-  .grid-container.fixed {
-    width: 1180px; } }
+      padding-top: 10px; } }
 .test-1 {
   box-sizing: border-box;
   height: 100px;
