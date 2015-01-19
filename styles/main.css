@@ -7850,12 +7850,13 @@ th.hide-for-touch {
   #modal .modal__container {
     min-height: 300px;
     width: 600px;
+    max-width: 96%;
     margin: 0 auto;
     margin-top: 100px;
-    border-radius: 20px;
     background-color: white;
     display: block;
-    position: relative; }
+    position: relative;
+    box-shadow: 0 4px 0 #c2c2c2; }
   #modal .modal__button--dismiss {
     position: absolute;
     top: 10px;
@@ -7863,9 +7864,18 @@ th.hide-for-touch {
     width: 30px;
     right: 10px;
     background-color: #f08c8c;
-    border-radius: 10px; }
+    text-align: center;
+    color: whitesmoke;
+    line-height: 30px;
+    box-shadow: 0 2px 0 #e43232; }
+    #modal .modal__button--dismiss:before {
+      content: "";
+      font-family: FontAwesome; }
+    #modal .modal__button--dismiss:active {
+      top: 12px;
+      box-shadow: 0 0 0 #e43232; }
   #modal .modal__shader {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -7880,20 +7890,19 @@ th.hide-for-touch {
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='50'); }
 
 .transition {
-  opacity: 0;
-  left: 80px;
-  top: 120px; }
+  transition: all 600;
+  opacity: 0; }
 
-#inPage, #outPage {
+#inPage, #outPage, .page {
   position: absolute;
   top: 0;
   left: 0;
   right: 0; }
 
-#inPage {
+.pageIn {
   opacity: 0; }
 
-#outPage {
+.pageOut {
   opacity: 1; }
 
 .grid-container {
@@ -7914,12 +7923,13 @@ th.hide-for-touch {
     .grid-container .grid-row:first-child {
       margin-top: -10px; }
 
-@media only screen and (min-width: 0) {
+@media only screen and (min-width: 0px) {
   .grid-container {
     width: 100%;
-    max-width: 24em; }
+    max-width: 100%;
+    font-family: "100%", serif; }
     .grid-container.fixed {
-      width: 24em; }
+      width: 100%; }
     .grid-container .grid-row .small-1 {
       width: 8.33333%;
       display: inline-block;
@@ -7992,12 +8002,13 @@ th.hide-for-touch {
       float: left;
       padding-left: 10px;
       padding-top: 10px; } }
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 650px) {
   .grid-container {
     width: 100%;
-    max-width: 38em; }
+    max-width: 626px;
+    font-family: "626px", serif; }
     .grid-container.fixed {
-      width: 38em; }
+      width: 626px; }
     .grid-container .grid-row .medium-1 {
       width: 8.33333%;
       display: inline-block;
@@ -8070,12 +8081,13 @@ th.hide-for-touch {
       float: left;
       padding-left: 10px;
       padding-top: 10px; } }
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 920px) {
   .grid-container {
     width: 100%;
-    max-width: 62em; }
+    max-width: 910px;
+    font-family: "910px", serif; }
     .grid-container.fixed {
-      width: 62em; }
+      width: 910px; }
     .grid-container .grid-row .large-1 {
       width: 8.33333%;
       display: inline-block;
