@@ -7890,7 +7890,6 @@ th.hide-for-touch {
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='50'); }
 
 .transition {
-  transition: all 600;
   opacity: 0; }
 
 #inPage, #outPage, .page {
@@ -7913,6 +7912,8 @@ th.hide-for-touch {
     display: table; }
   .grid-container:after {
     clear: both; }
+  .grid-container:first-child {
+    margin-top: 10px; }
   .grid-container .grid-row {
     margin-left: -10px; }
     .grid-container .grid-row:before, .grid-container .grid-row:after {
