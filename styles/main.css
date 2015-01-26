@@ -7912,8 +7912,6 @@ th.hide-for-touch {
     display: table; }
   .grid-container:after {
     clear: both; }
-  .grid-container:first-child {
-    margin-top: 10px; }
   .grid-container .grid-row {
     margin-left: -10px; }
     .grid-container .grid-row:before, .grid-container .grid-row:after {
@@ -8218,7 +8216,8 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  position: relative; }
+  position: relative;
+  padding-bottom: 20px; }
 
 @font-face {
   font-family: "ubuntu";
