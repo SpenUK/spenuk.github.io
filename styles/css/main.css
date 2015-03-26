@@ -263,6 +263,9 @@ ul {
 fieldset {
   border: none; }
 
+.hidden {
+  display: none !important; }
+
 .page-wrap {
   position: relative;
   z-index: 5;
@@ -743,11 +746,15 @@ body .go-prev {
   margin-left: -60px; }
   body .go-prev:hover i {
     font-size: 1.4em; }
+  body .go-prev.hide {
+    margin-left: 0; }
 body .go-next {
   float: right;
   margin-right: -60px; }
   body .go-next:hover i {
     font-size: 1.4em; }
+  body .go-next.hide {
+    margin-right: 0; }
 body.content .go-prev {
   margin-left: 0; }
 body.content .go-next {
