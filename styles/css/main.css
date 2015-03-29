@@ -712,7 +712,8 @@ body .go-prev, body .go-next {
   white-space: nowrap;
   font-size: 1em;
   height: 100%;
-  width: 60px; }
+  width: 60px;
+  position: absolute; }
   body .go-prev i, body .go-prev p, body .go-next i, body .go-next p {
     display: inline-block;
     vertical-align: middle; }
@@ -721,12 +722,14 @@ body .go-prev, body .go-next {
     width: 60px;
     line-height: 60px; }
 body .go-prev {
-  float: left;
+  left: 0;
+  top: 0;
   margin-left: -60px; }
   body .go-prev:hover i {
     font-size: 1.4em; }
 body .go-next {
-  float: right;
+  right: 0;
+  top: 0;
   margin-right: -60px; }
   body .go-next:hover i {
     font-size: 1.4em; }
