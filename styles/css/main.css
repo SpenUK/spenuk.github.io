@@ -235,7 +235,7 @@ input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   text-decoration: none; }
 
-html {
+html, body {
   height: 100%; }
 
 body {
@@ -278,30 +278,28 @@ fieldset {
     width: 100%; }
 
 .header {
+  transition: all 0.5s ease;
+  height: 60px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
   text-align: center;
-  z-index: 10;
-  position: relative; }
-  .header .logo {
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    margin: 5px;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    box-shadow: inset 0 9px 0 rgba(20, 20, 20, 0.1), 0 4px 0 rgba(20, 20, 20, 0.1);
-    text-shadow: 0 4px 0 rgba(20, 20, 20, 0.1); }
-    .header .logo h1 {
-      font-weight: bold;
-      margin: 0;
-      padding: 0;
-      line-height: 40px;
-      font-size: 1.4em;
-      border: 5px solid whitesmoke;
-      color: whitesmoke;
-      font-family: 'ubuntu', sans-serif; }
+  z-index: 200; }
+  .header .grid-container {
+    height: 100%; }
+  .header .icon {
+    display: inline-block; }
+    .header .icon i {
+      transition: color 0.5s ease;
+      color: white;
+      display: inline-block;
+      vertical-align: middle;
+      width: 60px;
+      text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+      line-height: 60px;
+      height: 60px; }
+  .header .landing-footer-content i {
+    color: #00c8b4; }
 
 .footer-fix {
   height: 60px; }
@@ -568,9 +566,6 @@ fieldset {
       float: left;
       padding-left: 0px;
       padding-top: 0px; } }
-html, body {
-  height: 100%; }
-
 body {
   overflow: hidden;
   background-color: whitesmoke; }
@@ -578,37 +573,9 @@ body {
     cursor: pointer; }
     body .show-intro:hover, body .show-content:hover {
       font-size: 2.4em; }
-  body .vertical-fix {
-    height: 100%;
-    vertical-align: middle;
-    display: inline-block;
-    width: 0.8em;
-    margin-left: -2em; }
   body .landing-container {
     transition: height 0.5s ease;
     height: 100%; }
-  body .header {
-    transition: all 0.5s ease;
-    height: 60px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    overflow: hidden; }
-    body .header .grid-container {
-      height: 100%; }
-    body .header .icon {
-      display: inline-block; }
-      body .header .icon i {
-        transition: color 0.5s ease;
-        color: white;
-        display: inline-block;
-        vertical-align: middle;
-        width: 60px;
-        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
-        line-height: 60px;
-        height: 60px; }
-    body .header .landing-footer-content i {
-      color: #00c8b4; }
   body .page-wrap {
     box-sizing: border-box;
     transition: all 0 ease;
@@ -621,16 +588,29 @@ body {
       height: 100%; }
     body .page-wrap .main {
       position: relative;
-      height: 50%;
-      overflow: hidden;
-      padding-top: 60px; }
+      height: 50%; }
+      body .page-wrap .main.animating-next {
+        transition: all 0.8s ease;
+        transform: translateX(-100%); }
+        body .page-wrap .main.animating-next .content.transitioner {
+          transform: translateX(100%);
+          display: block; }
+      body .page-wrap .main.animating-prev {
+        transition: all 0.8s ease;
+        transform: translateX(100%); }
+        body .page-wrap .main.animating-prev .content.transitioner {
+          transform: translateX(-100%);
+          display: block; }
       body .page-wrap .main .content {
         position: absolute;
-        top: 60px;
+        top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         overflow: scroll; }
+        body .page-wrap .main .content.transitioner {
+          background-color: rgba(0, 0, 0, 0.1);
+          display: none; }
     body .page-wrap .landing {
       position: relative;
       transition: margin-top 0.5s ease;
@@ -746,18 +726,18 @@ body .go-prev {
   margin-left: -60px; }
   body .go-prev:hover i {
     font-size: 1.4em; }
-  body .go-prev.hide {
-    margin-left: 0; }
 body .go-next {
   float: right;
   margin-right: -60px; }
   body .go-next:hover i {
     font-size: 1.4em; }
-  body .go-next.hide {
-    margin-right: 0; }
 body.content .go-prev {
   margin-left: 0; }
+  body.content .go-prev.hide {
+    margin-left: -60px; }
 body.content .go-next {
   margin-right: 0; }
+  body.content .go-next.hide {
+    margin-right: -60px; }
 
 /*# sourceMappingURL=main.css.map */
