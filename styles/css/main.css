@@ -701,15 +701,15 @@ body.content {
     opacity: 1;
     transform: translateY(0); }
 
-.intro a.about, .intro a.projects, .intro a.blog, .intro a.contact {
+.landing a.about, .landing a.projects, .landing a.blog, .landing a.contact {
   font-weight: bold; }
-.intro a.about {
+.landing a.about {
   color: #00c8b4; }
-.intro a.projects {
+.landing a.projects {
   color: #964bc8; }
-.intro a.blog {
+.landing a.blog {
   color: #e15a6e; }
-.intro a.contact {
+.landing a.contact {
   color: #e1c85a; }
 
 .page-colors body.page-about .header {
