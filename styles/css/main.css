@@ -632,7 +632,6 @@ body {
       transition: margin-top 0.5s ease;
       height: 50%;
       width: 100%;
-      padding-top: 60px;
       display: table;
       vertical-align: middle; }
       body .page-wrap .landing .cell {
@@ -701,16 +700,36 @@ body.content {
     opacity: 1;
     transform: translateY(0); }
 
-.landing a.about, .landing a.projects, .landing a.blog, .landing a.contact {
-  font-weight: bold; }
-.landing a.about {
-  color: #00c8b4; }
-.landing a.projects {
-  color: #964bc8; }
-.landing a.blog {
-  color: #e15a6e; }
-.landing a.contact {
-  color: #e1c85a; }
+.landing {
+  color: #fff;
+  transform: translateY(60px);
+  background-color: #244454; }
+  .landing ul.social-icons {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    top: 0;
+    margin-right: 10px; }
+    .landing ul.social-icons a {
+      color: #00c8b4;
+      opacity: 0.5; }
+      .landing ul.social-icons a:hover {
+        opacity: 0.8; }
+    .landing ul.social-icons li {
+      display: inline-block;
+      margin: 5px;
+      margin-top: 10px; }
+  .landing a.about, .landing a.projects, .landing a.blog, .landing a.contact {
+    font-weight: bold;
+    margin: 10px; }
+  .landing a.about {
+    color: #00c8b4; }
+  .landing a.projects {
+    color: #964bc8; }
+  .landing a.blog {
+    color: #e15a6e; }
+  .landing a.contact {
+    color: #e1c85a; }
 
 .page-colors body.page-about .header {
   background-color: #00c8b4; }
