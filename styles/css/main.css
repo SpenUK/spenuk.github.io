@@ -275,6 +275,10 @@ fieldset {
   border: none; }
 
 .centered {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%); }
 
 .hidden {
@@ -292,6 +296,10 @@ fieldset {
     width: 100%; }
 
 .header {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   height: 60px;
   width: 100%;
@@ -304,6 +312,10 @@ fieldset {
   .header .icon {
     display: inline-block; }
     .header .icon i {
+      -webkit-transition: color 0.5s ease;
+      -moz-transition: color 0.5s ease;
+      -ms-transition: color 0.5s ease;
+      -o-transition: color 0.5s ease;
       transition: color 0.5s ease;
       color: white;
       display: inline-block;
@@ -588,10 +600,18 @@ body {
     body .show-intro:hover, body .show-content:hover {
       font-size: 2.4em; }
   body .landing-container {
+    -webkit-transition: height 0.5s ease;
+    -moz-transition: height 0.5s ease;
+    -ms-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
     transition: height 0.5s ease;
     height: 100%; }
   body .page-wrap {
     box-sizing: border-box;
+    -webkit-transition: all 0 ease;
+    -moz-transition: all 0 ease;
+    -ms-transition: all 0 ease;
+    -o-transition: all 0 ease;
     transition: all 0 ease;
     height: 200%;
     width: 100%;
@@ -605,15 +625,39 @@ body {
       height: 100%;
       padding-top: 60px; }
       body .page-wrap .main.animating-next {
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
         transition: all 0.8s ease;
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
         transform: translateX(-100%); }
         body .page-wrap .main.animating-next .content.transitioner {
+          -webkit-transform: translateX(100%);
+          -moz-transform: translateX(100%);
+          -ms-transform: translateX(100%);
+          -o-transform: translateX(100%);
           transform: translateX(100%);
           display: block; }
       body .page-wrap .main.animating-prev {
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
         transition: all 0.8s ease;
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
         transform: translateX(100%); }
         body .page-wrap .main.animating-prev .content.transitioner {
+          -webkit-transform: translateX(-100%);
+          -moz-transform: translateX(-100%);
+          -ms-transform: translateX(-100%);
+          -o-transform: translateX(-100%);
           transform: translateX(-100%);
           display: block; }
       body .page-wrap .main .content {
@@ -629,6 +673,10 @@ body {
           display: none; }
     body .page-wrap .landing {
       position: relative;
+      -webkit-transition: margin-top 0.5s ease;
+      -moz-transition: margin-top 0.5s ease;
+      -ms-transition: margin-top 0.5s ease;
+      -o-transition: margin-top 0.5s ease;
       transition: margin-top 0.5s ease;
       height: 50%;
       width: 100%;
@@ -643,6 +691,10 @@ body {
         width: 100%;
         text-align: center; }
   body .landing-footer-content, body .header-content {
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
     transition: all 0.6s ease;
     height: 100%;
     width: 100%;
@@ -651,57 +703,129 @@ body {
     margin: 0 auto; }
 
 body.content-landing.content {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
   transition: none; }
   body.content-landing.content .page-wrap {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
     transition: none; }
 
 body.intro-landing.intro {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
   transition: none; }
   body.intro-landing.intro .page-wrap {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
     transition: none; }
 
 .block-transition, .block-initial-transition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
   transition: none !important; }
 
 .block-initial-transition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
   transition: none !important; }
   .block-initial-transition .page-wrap, .block-initial-transition .landing-footer-content, .block-initial-transition .header, .block-initial-transition i, .block-initial-transition .go-prev, .block-initial-transition .go-next {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
     transition: none !important; }
 
 body.intro {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
   body.intro .header {
     background-color: rgba(0, 0, 0, 0.1); }
   body.intro .page-wrap {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    -webkit-transform: translate(0%, -60px);
+    -moz-transform: translate(0%, -60px);
+    -ms-transform: translate(0%, -60px);
+    -o-transform: translate(0%, -60px);
     transform: translate(0%, -60px); }
   body.intro .landing-footer-content {
     transition-delay: 0.5s;
     opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
     transform: translateY(0); }
   body.intro .header-content {
     transition-delay: 0s;
     opacity: 0;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
     transform: translateY(-100%); }
 
 body.content {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
   body.content .header {
     background-color: #ff5a6e; }
   body.content .page-wrap {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
     transform: translate(0%, -50%); }
   body.content .landing-footer-content {
     transition-delay: 0s;
     opacity: 0;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
     transform: translateY(-100%); }
   body.content .header-content {
     transition-delay: 0.5s;
     opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
     transform: translateY(0); }
 
 .landing {
   color: #fff;
+  -webkit-transform: translateY(60px);
+  -moz-transform: translateY(60px);
+  -ms-transform: translateY(60px);
+  -o-transform: translateY(60px);
   transform: translateY(60px);
   background-color: #244454; }
   .landing ul.social-icons {
@@ -764,6 +888,10 @@ body.content.theme-4 .header {
     color: #fff; }
 
 body .go-prev, body .go-next {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   transition-delay: 1s;
   display: inline-block;
