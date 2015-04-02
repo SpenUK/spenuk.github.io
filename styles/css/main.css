@@ -243,6 +243,9 @@ input[type="checkbox"], input[type="radio"] {
 html, body {
   height: 100%; }
 
+html {
+  overflow: hidden; }
+
 body {
   min-height: 100%;
   background-color: whitesmoke;
@@ -828,6 +831,12 @@ body.content {
   -o-transform: translateY(60px);
   transform: translateY(60px);
   background-color: #244454; }
+  .landing .page-icon-wrapper {
+    display: inline-block; }
+    .landing .page-icon-wrapper h4 {
+      font-weight: normal; }
+  .landing .page-icon {
+    height: 100px; }
   .landing ul.social-icons {
     position: absolute;
     right: 0;
@@ -845,15 +854,8 @@ body.content {
       margin-top: 10px; }
   .landing a.about, .landing a.projects, .landing a.blog, .landing a.contact {
     font-weight: bold;
-    margin: 10px; }
-  .landing a.about {
-    color: #00c8b4; }
-  .landing a.projects {
-    color: #964bc8; }
-  .landing a.blog {
-    color: #e15a6e; }
-  .landing a.contact {
-    color: #e1c85a; }
+    margin: 10px;
+    color: #e6e6e6; }
 
 .page-colors body.page-about .header {
   background-color: #00c8b4; }
