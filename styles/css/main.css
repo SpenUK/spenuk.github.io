@@ -879,8 +879,67 @@ body.content {
 .page-colors body.page-about .header {
   background-color: #00c8b4; }
 
-.page-colors body.page-contact .header {
-  background-color: #e1c85a; }
+body.page-contact .content ul.social-icons li {
+  width: 100%; }
+body.page-contact .content ul.social-icons i, body.page-contact .content ul.social-icons p {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center; }
+body.page-contact .content ul.social-icons i {
+  color: #00c8b4;
+  font-size: 2em; }
+
+form.contact-form {
+  width: 480px;
+  max-width: 95%;
+  margin: 0 auto;
+  font-size: 1.2em; }
+  form.contact-form input, form.contact-form input:focus {
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 8px auto;
+    padding: 0.2em 0.6em;
+    background-color: #fff; }
+  form.contact-form textarea, form.contact-form textarea:focus {
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 8px auto;
+    padding: 0.7em 0.6em;
+    background-color: #fff; }
+  form.contact-form button.submit {
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+    padding: 0.5em;
+    background-color: #ff5a6e;
+    -webkit-box-shadow: 0 4px 0 #ff0e2b;
+    -moz-box-shadow: 0 4px 0 #ff0e2b;
+    box-shadow: 0 4px 0 #ff0e2b;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); }
+    form.contact-form button.submit:active {
+      margin-top: 22px;
+      -webkit-box-shadow: 0 2px 0 #ff0e2b;
+      -moz-box-shadow: 0 2px 0 #ff0e2b;
+      box-shadow: 0 2px 0 #ff0e2b; }
+  form.contact-form .field.error input, form.contact-form .field.error textarea {
+    background-color: #ffe1e1;
+    -webkit-box-shadow: 0 4px 0 #ff9595;
+    -moz-box-shadow: 0 4px 0 #ff9595;
+    box-shadow: 0 4px 0 #ff9595; }
 
 .page-colors body.page-blog .header {
   background-color: #e15a6e; }
