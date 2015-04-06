@@ -205,16 +205,6 @@ input[type="checkbox"], input[type="radio"] {
   src: url("fonts/OpenSans-CondBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-.button, .cta-button {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  font-size: 20px;
-  font-family: "Open Sans", sans-serif;
-  padding: 16px 20px;
-  text-transform: uppercase;
-  text-align: center; }
-
 .cta-button {
   display: block;
   margin: 8px auto;
@@ -879,18 +869,96 @@ body.content {
 .page-colors body.page-about .header {
   background-color: #00c8b4; }
 
+body.page-contact .content ul.social-icons .button {
+  width: 200px;
+  margin-bottom: 20px; }
+  body.page-contact .content ul.social-icons .button.twitter {
+    background-color: #0084b4;
+    box-shadow: 0 4px 0 #005f81;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    height: 50px;
+    line-height: 50px;
+    min-width: 50px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 0 .25em;
+    vertical-align: top;
+    cursor: pointer; }
+    body.page-contact .content ul.social-icons .button.twitter * {
+      line-height: inherit;
+      color: inherit; }
+    body.page-contact .content ul.social-icons .button.twitter.disabled {
+      cursor: auto;
+      opacity: 0.6; }
+    body.page-contact .content ul.social-icons .button.twitter:hover {
+      color: white; }
+    body.page-contact .content ul.social-icons .button.twitter:active {
+      top: 3px;
+      box-shadow: 0 1px 0 #004c68; }
+  body.page-contact .content ul.social-icons .button.github {
+    background-color: #666666;
+    box-shadow: 0 4px 0 #4d4d4d;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    height: 50px;
+    line-height: 50px;
+    min-width: 50px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 0 .25em;
+    vertical-align: top;
+    cursor: pointer; }
+    body.page-contact .content ul.social-icons .button.github * {
+      line-height: inherit;
+      color: inherit; }
+    body.page-contact .content ul.social-icons .button.github.disabled {
+      cursor: auto;
+      opacity: 0.6; }
+    body.page-contact .content ul.social-icons .button.github:hover {
+      color: white; }
+    body.page-contact .content ul.social-icons .button.github:active {
+      top: 3px;
+      box-shadow: 0 1px 0 #404040; }
+  body.page-contact .content ul.social-icons .button.linked-in {
+    background-color: #007bb6;
+    box-shadow: 0 4px 0 #005983;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    height: 50px;
+    line-height: 50px;
+    min-width: 50px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 0 .25em;
+    vertical-align: top;
+    cursor: pointer; }
+    body.page-contact .content ul.social-icons .button.linked-in * {
+      line-height: inherit;
+      color: inherit; }
+    body.page-contact .content ul.social-icons .button.linked-in.disabled {
+      cursor: auto;
+      opacity: 0.6; }
+    body.page-contact .content ul.social-icons .button.linked-in:hover {
+      color: white; }
+    body.page-contact .content ul.social-icons .button.linked-in:active {
+      top: 3px;
+      box-shadow: 0 1px 0 #00476a; }
 body.page-contact .content ul.social-icons li {
   width: 100%; }
 body.page-contact .content ul.social-icons i, body.page-contact .content ul.social-icons p {
   display: inline-block;
   vertical-align: middle;
-  text-align: center; }
+  text-align: center;
+  margin: 0 .5em; }
 body.page-contact .content ul.social-icons i {
-  color: #00c8b4;
-  font-size: 2em; }
+  float: left;
+  font-size: 1.6em; }
 
 form.contact-form {
-  width: 480px;
   max-width: 95%;
   margin: 0 auto;
   font-size: 1.2em; }
