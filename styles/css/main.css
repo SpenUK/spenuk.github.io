@@ -877,18 +877,18 @@ body.content {
 .page-colors body.page-about .header {
   background-color: #00c8b4; }
 
-body.page-contact .connect {
+.grid-container.contact .connect {
   max-width: 95%;
   margin: 0 auto; }
-  body.page-contact .connect ul.social-icons {
+  .grid-container.contact .connect ul.social-icons {
     width: 100%; }
-    body.page-contact .connect ul.social-icons .button {
+    .grid-container.contact .connect ul.social-icons .button {
       width: 100%;
       margin: 8px auto;
       padding: 0 50px; }
-      body.page-contact .connect ul.social-icons .button.twitter {
-        background-color: #0084b4;
-        box-shadow: 0 4px 0 #005f81;
+      .grid-container.contact .connect ul.social-icons .button.twitter {
+        background-color: #00aced;
+        box-shadow: 0 4px 0 #0087ba;
         text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
         height: 50px;
         line-height: 50px;
@@ -899,15 +899,15 @@ body.page-contact .connect {
         padding: 0;
         vertical-align: top;
         cursor: pointer; }
-        body.page-contact .connect ul.social-icons .button.twitter * {
+        .grid-container.contact .connect ul.social-icons .button.twitter * {
           line-height: inherit; }
-        body.page-contact .connect ul.social-icons .button.twitter.disabled {
+        .grid-container.contact .connect ul.social-icons .button.twitter.disabled {
           cursor: auto;
           opacity: 0.6; }
-        body.page-contact .connect ul.social-icons .button.twitter:active {
+        .grid-container.contact .connect ul.social-icons .button.twitter:active {
           top: 3px;
-          box-shadow: 0 1px 0 #004c68; }
-      body.page-contact .connect ul.social-icons .button.github {
+          box-shadow: 0 1px 0 #0074a1; }
+      .grid-container.contact .connect ul.social-icons .button.github {
         background-color: #666666;
         box-shadow: 0 4px 0 #4d4d4d;
         text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
@@ -920,15 +920,15 @@ body.page-contact .connect {
         padding: 0;
         vertical-align: top;
         cursor: pointer; }
-        body.page-contact .connect ul.social-icons .button.github * {
+        .grid-container.contact .connect ul.social-icons .button.github * {
           line-height: inherit; }
-        body.page-contact .connect ul.social-icons .button.github.disabled {
+        .grid-container.contact .connect ul.social-icons .button.github.disabled {
           cursor: auto;
           opacity: 0.6; }
-        body.page-contact .connect ul.social-icons .button.github:active {
+        .grid-container.contact .connect ul.social-icons .button.github:active {
           top: 3px;
           box-shadow: 0 1px 0 #404040; }
-      body.page-contact .connect ul.social-icons .button.linked-in {
+      .grid-container.contact .connect ul.social-icons .button.linked-in {
         background-color: #007bb6;
         box-shadow: 0 4px 0 #005983;
         text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
@@ -941,26 +941,26 @@ body.page-contact .connect {
         padding: 0;
         vertical-align: top;
         cursor: pointer; }
-        body.page-contact .connect ul.social-icons .button.linked-in * {
+        .grid-container.contact .connect ul.social-icons .button.linked-in * {
           line-height: inherit; }
-        body.page-contact .connect ul.social-icons .button.linked-in.disabled {
+        .grid-container.contact .connect ul.social-icons .button.linked-in.disabled {
           cursor: auto;
           opacity: 0.6; }
-        body.page-contact .connect ul.social-icons .button.linked-in:active {
+        .grid-container.contact .connect ul.social-icons .button.linked-in:active {
           top: 3px;
           box-shadow: 0 1px 0 #00476a; }
-    body.page-contact .connect ul.social-icons li {
+    .grid-container.contact .connect ul.social-icons li {
       min-width: 200px;
       display: block; }
-    body.page-contact .connect ul.social-icons i, body.page-contact .connect ul.social-icons p {
+    .grid-container.contact .connect ul.social-icons i, .grid-container.contact .connect ul.social-icons p {
       display: inline-block;
       vertical-align: middle;
       text-align: center;
       color: #fff;
       margin: 0 .5em; }
-    body.page-contact .connect ul.social-icons i {
+    .grid-container.contact .connect ul.social-icons i {
       font-size: 1.6em; }
-body.page-contact .say-hello {
+.grid-container.contact .say-hello {
   max-width: 95%;
   margin: 0 auto; }
 
