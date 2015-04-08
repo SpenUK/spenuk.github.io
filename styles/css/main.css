@@ -231,6 +231,8 @@ input[type="checkbox"], input[type="radio"] {
 .panel {
   background-color: #fff;
   padding: 2em 4em;
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
   position: relative; }
   .panel img, .panel p, .panel h1, .panel h2, .panel h3, .panel h4 {
@@ -888,6 +890,8 @@ body.content {
       padding: 0 50px; }
       .grid-container.contact .connect ul.social-icons .button.twitter {
         background-color: #00aced;
+        -webkit-box-shadow: 0 4px 0 #0087ba;
+        -moz-box-shadow: 0 4px 0 #0087ba;
         box-shadow: 0 4px 0 #0087ba;
         text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
         height: 50px;
@@ -896,7 +900,6 @@ body.content {
         text-align: center;
         position: relative;
         display: inline-block;
-        padding: 0;
         vertical-align: top;
         cursor: pointer; }
         .grid-container.contact .connect ul.social-icons .button.twitter * {
@@ -909,6 +912,8 @@ body.content {
           box-shadow: 0 1px 0 #0074a1; }
       .grid-container.contact .connect ul.social-icons .button.github {
         background-color: #666666;
+        -webkit-box-shadow: 0 4px 0 #4d4d4d;
+        -moz-box-shadow: 0 4px 0 #4d4d4d;
         box-shadow: 0 4px 0 #4d4d4d;
         text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
         height: 50px;
@@ -917,7 +922,6 @@ body.content {
         text-align: center;
         position: relative;
         display: inline-block;
-        padding: 0;
         vertical-align: top;
         cursor: pointer; }
         .grid-container.contact .connect ul.social-icons .button.github * {
@@ -930,6 +934,8 @@ body.content {
           box-shadow: 0 1px 0 #404040; }
       .grid-container.contact .connect ul.social-icons .button.linked-in {
         background-color: #007bb6;
+        -webkit-box-shadow: 0 4px 0 #005983;
+        -moz-box-shadow: 0 4px 0 #005983;
         box-shadow: 0 4px 0 #005983;
         text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
         height: 50px;
@@ -938,7 +944,6 @@ body.content {
         text-align: center;
         position: relative;
         display: inline-block;
-        padding: 0;
         vertical-align: top;
         cursor: pointer; }
         .grid-container.contact .connect ul.social-icons .button.linked-in * {
@@ -1035,6 +1040,8 @@ form.contact-form {
       text-align: center; }
   form.contact-form .submission-error {
     background-color: #d72828;
+    -webkit-box-shadow: 0 4px 0 #ac2020;
+    -moz-box-shadow: 0 4px 0 #ac2020;
     box-shadow: 0 4px 0 #ac2020;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
     height: 50px;
@@ -1043,7 +1050,6 @@ form.contact-form {
     text-align: center;
     position: relative;
     display: inline-block;
-    padding: 0;
     vertical-align: top;
     margin: 8px auto;
     color: #fff;
