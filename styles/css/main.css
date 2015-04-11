@@ -853,7 +853,8 @@ body.content {
   .landing .page-icon-wrapper {
     display: inline-block; }
     .landing .page-icon-wrapper h4 {
-      font-weight: normal; }
+      font-weight: normal;
+      margin: 0.4em 0; }
   .landing .page-icon {
     height: 100px; }
   .landing ul.social-icons {
