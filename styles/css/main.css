@@ -850,13 +850,38 @@ body.content {
   -o-transform: translateY(60px);
   transform: translateY(60px);
   background-color: #244454; }
+  .landing .page-icons-wrapper {
+    max-width: 900px;
+    margin: 0 auto; }
+    .landing .page-icons-wrapper:before, .landing .page-icons-wrapper:after {
+      content: " ";
+      display: table; }
+    .landing .page-icons-wrapper:after {
+      clear: both; }
   .landing .page-icon-wrapper {
-    display: inline-block; }
+    display: inline-block;
+    position: relative;
+    width: 33.333%;
+    float: left; }
+    .landing .page-icon-wrapper a {
+      max-width: 100%;
+      margin: 0 auto; }
+      .landing .page-icon-wrapper a:hover h4 {
+        transition: all 0.2s ease-out;
+        opacity: 1;
+        top: 0; }
+    .landing .page-icon-wrapper img, .landing .page-icon-wrapper h4 {
+      max-width: 90%; }
     .landing .page-icon-wrapper h4 {
+      position: relative;
+      opacity: 0;
       font-weight: normal;
-      margin: 0.4em 0; }
+      margin: 0.4em auto;
+      text-transform: uppercase;
+      color: #00c8b4;
+      top: -15px; }
   .landing .page-icon {
-    height: 100px; }
+    max-height: 100px; }
   .landing ul.social-icons {
     position: absolute;
     right: 0;
@@ -874,7 +899,6 @@ body.content {
       margin-top: 10px; }
   .landing a.about, .landing a.projects, .landing a.blog, .landing a.contact {
     font-weight: bold;
-    margin: 10px;
     color: #e6e6e6; }
 
 .page-colors body.page-about .header {
