@@ -624,7 +624,8 @@ i.right {
   height: 100%;
   width: 200%;
   bottom: 0;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
 
 .animate-next.go {
   -webkit-transition: all 0.8s ease;
@@ -679,7 +680,8 @@ i.right {
 
 body {
   overflow: hidden;
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  -webkit-overflow-scrolling: touch; }
   body .show-intro, body .show-content {
     cursor: pointer; }
     body .show-intro:hover, body .show-content:hover {
@@ -711,6 +713,7 @@ body {
       padding-top: 60px; }
       body .page-wrap .main .content {
         position: absolute;
+        padding-top: 20px;
         padding-bottom: 40px;
         left: 0;
         width: 50%; }
