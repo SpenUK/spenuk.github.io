@@ -321,7 +321,7 @@ i.right {
   transition: background-color 0.5s ease;
   height: 60px;
   width: 100%;
-  position: absolute;
+  position: relative;
   overflow: hidden;
   text-align: center;
   z-index: 200; }
@@ -708,9 +708,13 @@ body {
       position: relative;
       height: 50%; }
     body .page-wrap .main {
-      position: relative;
-      height: 100%;
-      padding-top: 60px; }
+      transition: top .8s ease;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 60px; }
       body .page-wrap .main .content {
         position: absolute;
         padding-top: 20px;
@@ -926,8 +930,9 @@ body.content {
     font-weight: bold;
     color: #e6e6e6; }
 
-.page-colors body.page-about .header {
-  background-color: #00c8b4; }
+.content h1.title {
+  max-width: 95%;
+  margin: 0.5em auto; }
 
 .grid-container.contact .connect {
   max-width: 95%;
@@ -1141,11 +1146,13 @@ form.contact-form {
       -moz-box-shadow: 0 4px 0 #6FBA63;
       box-shadow: 0 4px 0 #6FBA63; }
 
-.page-colors body.page-blog .header {
-  background-color: #e15a6e; }
+.blog h1.title {
+  max-width: 95%;
+  margin: 0.5em auto; }
 
-.page-colors body.page-projects .header {
-  background-color: #964bc8; }
+.projects h1.title {
+  max-width: 95%;
+  margin: 0.5em auto; }
 
 body.content.theme-1 .header {
   background-color: #ff5a6e; }
