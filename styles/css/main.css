@@ -924,17 +924,11 @@ body.content {
   .landing a.about, .landing a.projects, .landing a.blog, .landing a.contact {
     font-weight: bold;
     color: #e6e6e6; }
-  .landing a.about,
-  .landing a[href="#/about"] {
-    color: #37a0c8; }
-  .landing a.projects,
-  .landing a[href="#/projects"] {
-    color: #ff5a6e; }
-  .landing a.blog,
-  .landing a[href="#/blog"] {
-    color: #eeeb5f; }
-  .landing a.contact,
+  .landing a[href="#/about"],
+  .landing a[href="#/projects"],
+  .landing a[href="#/blog"],
   .landing a[href="#/contact"] {
+    font-weight: bold;
     color: #00c8b4; }
 
 .content h1.title {
